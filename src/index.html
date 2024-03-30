@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini Game of Life</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="root">
+      <div id="controls" class="controls">
+        <div>Iteration: <span id="itr"></span></div>
+        <button id="play"></button>
+        <button id="mode"></button>
+        <button id="clear">Clear</button>
+        <details>
+          <summary>Advanced</summary>
+          <div id="ranges"></div>
+        </details>
+      </div>
+      <div id="board"></div>
+    </div>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>

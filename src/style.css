@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.dark {
+  --color-active: #fff;
+  --color-backdrop: #000;
+}
+:root {
+  font-family: Roboto, sans-serif;
+  --color-active: #000;
+  --color-backdrop: #fff;
+  --button-color: black;
+  --button-bg: #ffffeecc;
+  --button-border-color: #666688;
+  --columns: 10;
+}
+#board {
+  background-color: var(--color-backdrop);
+  padding: 0.25em;
+  border-radius: 4px;
+  display: inline-grid;
+  grid-template-columns: repeat(var(--columns), -webkit-min-content);
+  grid-template-columns: repeat(var(--columns), min-content);
+  gap: 2px;
+}
+
+.cell {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-active);
+  background-color: var(--color-backdrop);
+}
+.cell.active > span {
+  background-color: var(--color-active);
+}
+.cell > span {
+  width: 90%;
+  height: 90%;
+  background-color: var(--color-backdrop);
+}
+
+button {
+  padding: 5px 10px;
+  background: var(--button-bg);
+  color: var(--button-color);
+  border-color: var(--button-border);
+  border-style: groove;
+  border-width: 1px;
+}
+.controls {
+  margin: 0 0 1em;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
